@@ -6,21 +6,30 @@
 > (e.g. [Sat, Sun]) 
 ```
 
-### `Faculty` :
+### `Instructor` :
+> This represent a single Intructor, who will take the class. 
 ```
 {
-    Faculty Name :
-    > Name of Faculty
+    Instructor Name :
+    > Name of Instructor
     
-    Faculty Courses : []
-    > List of Courses (ids) the Faculty teaches.
+    Instructor Courses : []
+    > List of Courses (ids) the instructor teaches.
 
-    Faculty Day Preference : [] 
-    > List of Days the Faculty prefers.
+    Instructor Availability :
+    > Days/Time the Instructor is available to take class.
+    {
+        Mon: (8:00,9:00),
+        Tues: (..,...)
+    }
+
+    Max-Daily-Teaching-Duration: (int)
+    > The max hours that can be alloted to the instructor.
 }
 ```
 
 ### `Course` : 
+> This represent a single course,which will be taught. 
 ```
 {
     Course-Id:
@@ -66,3 +75,13 @@
 ## Features :
 1. Ability to export the time-table in pdf or jpg/png format.
 2. Additional Manual Customization, after the AI generated Routine. 
+
+----
+
+## Points :
+
+- Taking input from an interactive website
+- Input constraints like timing,
+- Processing the data using (ML Model name)
+- Generate the routine in pdf, png or word
+- Download or share the routine
