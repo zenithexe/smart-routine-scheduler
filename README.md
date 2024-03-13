@@ -50,6 +50,13 @@
 
     Min-Period-Duration: (int)
     > Min period duration.
+
+    Room-Specific: (Toggle[True/False])
+    If the room is alloted for a specific course.
+    For eg: Lab for a particular subject. 
+
+    Related-Room-Id:
+    Only for room-specific courses. `Null` is generic.
 }
 ```
 
@@ -70,9 +77,11 @@
 > Eg. (12:00,13:00)
 ```
 
-### `Room` : {}
+### `Rooms` : {}
 ```
- 
+    Room-Id:
+    Unique ID for a specific room.
+
 ```
 
 -----
