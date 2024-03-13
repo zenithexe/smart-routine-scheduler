@@ -38,8 +38,8 @@
     Course-Name :
     > Name of the Course
 
-    Course-Duration : 
-    > Time within which the course must be completed
+    Min-Weekly-Course-Duration : 
+    > The minimum duration for which the course must be conducted on a weekly basis.
 
     Additional Course : (Toggle[True/False])
     > If the course is a sideline course and not part of the main curriculum.
